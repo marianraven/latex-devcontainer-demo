@@ -403,7 +403,6 @@ The university updates its crest every now and then. You can find up-to-date
 logos on [this page](http://www.cam.ac.uk/brand-resources/about-the-logo/logo-downloads)
 (subject to change without notice).
 
-Download and exchange the new logos with `University_Crest.eps` and/or `University_Crest.pdf`. I'll try to keep the crest up to date.
 
 #### _Q3_: Where can I find the guidelines to submit my thesis and requirements?
 
