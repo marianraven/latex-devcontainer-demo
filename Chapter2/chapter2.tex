@@ -47,15 +47,7 @@ La IETF a través del RFC 7228.\cite{rfc7228}, clasifica los dispositivos de IoT
 
 \begin{table}[ht]
     \centering
-    \begin{tabular}{|>{\centering\arraybackslash}p{4cm}|>{\centering\arraybackslash}p{4cm}|>{\centering\arraybackslash}p{4cm}|}
-        \hline
-        \textbf{Nombre} & \textbf{Tamaño de datos} \newline \textbf{(Ej. RAM)} & \textbf{Tamaño de código} \newline \textbf{(Ej. Flash)}\\
-        \hline
-        \textbf{Clase 0 (C0)}  & $\ll$ 10 KiB   & $\ll$ 100 KiB \\
-        \textbf{Clase 1 (C1)}  & $\sim$ 10 KiB  & $\sim$ 100 KiB \\
-        \textbf{Clase 2 (C2)}  & $\sim$ 50 KiB  & $\sim$ 250 KiB \\
-        \hline
-    \end{tabular}
+  % poner grasfico de las class de dispositivos
     \caption{Clases de dispositivos restringidos (KiB = 1024 bytes)}
     \label{tab:Clases_de_dispositivos_restringidos}
 \end{table}
@@ -149,12 +141,12 @@ Conceptos clave en el protocolo MQTT:
 En el protocolo MQTT de publicación-suscripción, después de conectarse al MQTT Server (Broker), un Cliente puede publicar y suscribirse a múltiples temas.  El Broker, que actúa como Servidor de Recursos (RS), se encarga de distribuir los mensajes publicados por los editores a sus suscriptores.
 Los mensajes se publican bajo un "Topic Name", y los suscriptores se suscriben a los Topic Names para recibir los mensajes correspondientes.  El Broker utiliza el nombre de tema de un mensaje publicado para determinar suscriptores deben recibir los mensajes. 
 
-\begin{wrapfigure}{r}{0.45\textwidth} %this figure will be at the right
+\begin{figure}[ht] %this figure will be at the right
     \centering
     \includegraphics[width=0.45\textwidth]{Imágenes/rfc9431setup_connection.png}
     \caption{Connection setup rfc9431}
     \label{fig:setup_MQTT}
-\end{wrapfigure}
+\end{figure}
 
 Un Propietario de Recursos puede preconfigurar políticas en el Servidor de Autorización (AS) que dan a los Clientes permisos de publicación o suscripción a diferentes temas.
 Los clientes demuestran su permiso para publicar y suscribirse a temas alojados en un Broker MQTT mediante un token de acceso vinculado a una clave de prueba de posesión (PoP).
@@ -221,12 +213,12 @@ Varias organizaciones de desarrollo de normas (Several Standards Developing Orga
 
    A partir de estas definiciones, podemos resumir una filosofía general de Edge Computing como distribución de las funciones requeridas cerca de los usuarios y datos, mientras que la diferencia con los sistemas locales clásicos es el uso de funciones de gestión y orquestación adoptadas desde el Cloud Computing. \cite{RFC9556}
 
-\begin{wrapfigure}{r}{0.40\textwidth} %this figure will be at the right
+\begin{figure}[ht] %this figure will be at the right
     \centering
     \includegraphics[width=0.40\textwidth]{Imágenes/device-to-gateway-rfc7452.png}
     \caption{Comunicación de dispositivo a Gateway}
     \label{fig:device-to-gateway-rfc7452}
-\end{wrapfigure}
+\end{figure}
 
 \textbf{Gateway}
 
@@ -345,12 +337,12 @@ El lema de DevSecOps es \textbf{“Shift-Left Security”} que significa incorpo
 
 \vspace{0.3cm}
 
-\begin{wrapfigure}{r}{0.30\textwidth} %this figure will be at the right
+\begin{figure}[ht] %this figure will be at the right
     \centering
     \includegraphics[width=0.25\textwidth]{Imágenes/SDLC.png}
     \caption{SDLC}
     \label{fig:Ciclo_de_vida_de_desarrollo_de_softwareSDLC}
-\end{wrapfigure}
+\end{figure}
 
 El ciclo de vida de desarrollo de software (SDLC) es un proceso estructurado que guía a los equipos de software para producir aplicaciones de alta calidad. Los equipos de software utilizan el SDLC para reducir los costos, minimizar los errores y garantizar que el software se alinee con los objetivos del proyecto en todo momento. En los métodos de desarrollo de software convencionales, las pruebas de seguridad eran un proceso independiente del SDLC, el equipo de seguridad descubre fallas sólo después de crear el software. DevSecOps mejora el SDLC mediante la detección de vulnerabilidades a lo largo del proceso de desarrollo.
 
